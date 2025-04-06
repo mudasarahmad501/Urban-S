@@ -9,7 +9,7 @@ import { Toaster } from 'sonner'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Urban-S'>
     <Toaster position="top-right" richColors expand visibleToasts={3} />
        <Routes>
           <Route path="/" element={<UserLayout/>}>

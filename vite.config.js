@@ -8,5 +8,5 @@ export default defineConfig({
   plugins: [react(),tailwindcss(),
     
   ],
-  base: "/UrbanStitch",
+  base: "/Urban-S",
 })
