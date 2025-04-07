@@ -65,6 +65,23 @@ function CollectionPage() {
     setIsSidebarOpen(prev => !prev);
   };
 
+  const handleClickOutside = (e) => {
+    if (
+      isSidebarOpen &&
+      sidebarRef.current &&
+      !sidebarRef.current.contains(e.target)
+    ) {
+      setIsSidebarOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isSidebarOpen]);
+
   const filteredProducts = products.filter(product => {
     const { category, gender, color, size, material, brand, price } = filters;
     return (
@@ -111,4 +128,3 @@ function CollectionPage() {
 }
 
 export default CollectionPage;
-
