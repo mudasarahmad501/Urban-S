@@ -15,7 +15,7 @@ function NavDrawer({navbarOpen, toggleNavbarDrawer}) {
           {/* Navs */}
             <div className='flex flex-col p-4 h-full gap-4'>
                 <h1 className='font-semibold text-md'>Menu</h1>
-                <Link to="#" onClick={toggleNavbarDrawer} className='block text-gray-600 hover:text-black text-sm font-medium uppercase'>Men</Link>
+                <Link to="/collections/all" onClick={toggleNavbarDrawer} className='block text-gray-600 hover:text-black text-sm font-medium uppercase'>Men</Link>
                 <Link to="#" onClick={toggleNavbarDrawer} className='block text-gray-600 hover:text-black text-sm font-medium uppercase'>women</Link>
                 <Link to="#" onClick={toggleNavbarDrawer} className='block text-gray-600 hover:text-black text-sm font-medium uppercase'>top wear</Link>
                 <Link to="#" onClick={toggleNavbarDrawer} className='block text-gray-600 hover:text-black text-sm font-medium uppercase'>bottom wear</Link>
