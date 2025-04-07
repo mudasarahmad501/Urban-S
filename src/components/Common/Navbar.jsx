@@ -24,14 +24,14 @@ function Navbar() {
             </div>
 
             <div className='hidden md:flex space-x-6'>
-                <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Men</Link>
+                <Link to="/collections/all" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>Men</Link>
                 <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>women</Link>
                 <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>top wear</Link>
                 <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>bottom wear</Link>
             </div>
 
             <div className='flex items-center space-x-4'>
-                <Link to="/profile" className='hover:text-black'><HiOutlineUser className='h-5 w-5 text-gray-700'/></Link>
+                <Link to="/login" className='hover:text-black'><HiOutlineUser className='h-5 w-5 text-gray-700'/></Link>
                 <button onClick={toggleCartDrawer} className='relative hover:text-black cursor-pointer'>
                     <HiOutlineShoppingBag className='h-5 w-5 text-gray-700'/>
                     <span className='absolute -top-2 bg-[#ea2e0e] text-white text-xs rounded-full px-1.5 py-0.5'>4</span>
